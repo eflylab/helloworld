@@ -13,6 +13,14 @@ on:
   schedule:
     - cron: 0 20 * * *
 
+# 手工触发
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+
 # 编辑触发
 #  push:
 #    branches:
